@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>❄️ Movie Explorer</h1>
+    <p>Search, explore and discover movies in a beautiful glass UI 🎬</p>
+</header>
+
+<section class="search-section">
+    <input type="text" id="movieInput" placeholder="Enter movie title..." aria-label="Movie name">
+
+    <button id="searchBtn">Search</button>
+
+    <select id="filter" aria-label="Sort movies">
+        <option value="">Sort By</option>
+        <option value="year">Year</option>
+        <option value="rating">IMDb Rating</option>
+    </select>
+</section>
+
+<p class="error-message" id="errorMsg">
+    Movie not found. Please try again.
+</p>
+
+<section class="movies-container" id="moviesContainer">
+    <!-- JS Injected Cards -->
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
